@@ -4,11 +4,14 @@
 function main() {
   // Loop
 
-  let names = ["Peter", "Jannick", "Maria"];
+  let revenue = [500, 300, 200, 599, 834, 573, 293, 482];
+
+  let totalRevenue = 0;
   // Die Schleife läuft solange, bis die Bedingung unwahr wird.
-  for (let i = 0; i < names.length; i++) {
-    console.log(names.length);
-    console.log(i);
-    console.log("Index:  " + i + "  Name: " + names[i]);
+  for (let i = 0; i < revenue.length; i++) {
+    totalRevenue += revenue[i];
+    console.log(totalRevenue);
   }
+
+  console.log("Total: " + totalRevenue);
 }
